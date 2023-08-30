@@ -89,11 +89,11 @@ CORS_ALLOWED_ORIGINS = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'nebula',
-        'USER': 'root',   # Replace with your MySQL username
-        'PASSWORD': 'sakshiSql@123',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'NAME': 'Fitness_Tracking',  # Your database name
+        'USER': 'root',  # Your database username
+        'PASSWORD': 'sakshiSql@123',  # Your database password
+        'HOST': 'localhost',  # Your database host
+        'PORT': '3306',  # Your database port
     }
 }
 

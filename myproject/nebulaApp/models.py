@@ -46,6 +46,8 @@ class Trainer(models.Model):
         return self.name
 
 
+
+
 class Exercise(models.Model):
     image = models.URLField()
     name = models.CharField(max_length=100)
@@ -59,6 +61,4 @@ class FitnessPlan(models.Model):
 
     def __str__(self):
         return self.name
-
-
 
