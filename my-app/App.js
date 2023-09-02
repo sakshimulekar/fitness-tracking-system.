@@ -1,13 +1,16 @@
 import React from 'react';
 import AppNavigator from './AppNavigator';
 import { FitnessContext } from './Context';
-import FitnessPlansScreen from './components/FitnessPlansScreen';
+import SignUp from './components/sign/SignUp';
+import Login from './components/sign/Login';
+
 
 export default function App() {
   return (
     <FitnessContext>
-      <FitnessPlansScreen/>
-    <AppNavigator />
+      <SignUp/>
+      <Login/>
+    {/* <AppNavigator /> */}
     </FitnessContext>
   );
 }

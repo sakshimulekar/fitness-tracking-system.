@@ -1,15 +1,20 @@
 from rest_framework import serializers
-from .models import User, Trainer, FitnessPlan, Exercise
-from rest_framework import generics
+from .models import UserInfo, TrainerInfo, FitnessPlan, Exercise,CustomUser
+
+
+class UserRegisterSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CustomUser
+        fields = ['email',  'password','is_trainer','username']
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
-        model = User
+        model = UserInfo
         fields = '__all__'
 
 class TrainerSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Trainer
+        model = TrainerInfo
         fields = '__all__'
 
 class ExerciseSerializer(serializers.ModelSerializer):
@@ -31,3 +36,6 @@ class FitnessPlanSerializer(serializers.ModelSerializer):
             exercise = Exercise.objects.create(**exercise_data)
             fitness_plan.exercises.add(exercise)
         return fitness_plan
+
+
+

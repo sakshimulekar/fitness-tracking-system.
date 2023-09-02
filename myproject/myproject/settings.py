@@ -57,6 +57,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'myproject.urls'
 
 
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -89,7 +90,7 @@ CORS_ALLOWED_ORIGINS = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Fitness_Tracking',  # Your database name
+        'NAME': 'fitness',  # Your database name
         'USER': 'root',  # Your database username
         'PASSWORD': 'sakshiSql@123',  # Your database password
         'HOST': 'localhost',  # Your database host
@@ -118,6 +119,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
@@ -139,3 +141,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
